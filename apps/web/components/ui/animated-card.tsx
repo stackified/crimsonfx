@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter, CardDescription } from "@crimsonfx/ui";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
