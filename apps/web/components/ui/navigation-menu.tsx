@@ -83,7 +83,7 @@ const NavigationMenuLink = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Link> & {
     asChild?: boolean
   }
->(({ className, asChild, children, ...props }, ref) => {
+>(({ className, asChild, children, onSelect, ...props }, ref) => {
   if (asChild) {
     return (
       <Slot ref={ref} className={cn(className)} {...props}>
@@ -95,6 +95,7 @@ const NavigationMenuLink = React.forwardRef<
     <NavigationMenuPrimitive.Link
       ref={ref}
       className={cn(className)}
+      onSelect={onSelect}
       {...props}
     >
       {children}
