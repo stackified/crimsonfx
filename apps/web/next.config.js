@@ -2,12 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  // basePath will be auto-injected by GitHub Actions configure-pages action
-  // Don't set it manually to allow the action to inject it correctly
+  // basePath for GitHub Pages - will be overridden by GitHub Actions if it injects it
+  // Set explicitly for production builds to ensure it's available during build
+  basePath: process.env.BASE_PATH || (process.env.NODE_ENV === 'production' ? '/RestroFX' : ''),
   trailingSlash: true,
   // assetPrefix must match basePath (with trailing slash) for GitHub Pages
-  // The configure-pages action injects basePath, and we set assetPrefix to match
-  // Use environment variable if set, otherwise default to /RestroFX/ for production builds
+  // This ensures CSS, JS, and other assets load correctly
   assetPrefix: process.env.ASSET_PREFIX || (process.env.NODE_ENV === 'production' ? '/RestroFX/' : ''),
   transpilePackages: ["@crimsonfx/ui", "@crimsonfx/utils", "@crimsonfx/types"],
   images: {

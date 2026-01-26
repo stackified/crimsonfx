@@ -4,6 +4,7 @@ import { Button } from "@crimsonfx/ui";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
+import { withBasePath } from "@/lib/base-path";
 
 interface HeroProps {
   eyebrow: string;
@@ -35,7 +36,7 @@ export function HeroSectionEnhanced({
           playsInline
           className="absolute inset-0 w-full h-full object-cover object-[70%_50%] sm:object-center"
         >
-          <source src="/Hero.mp4" type="video/mp4" />
+          <source src={withBasePath("/Hero.mp4")} type="video/mp4" />
         </video>
 
         {/* Mobile-only Red Glassmorphic Overlay */}

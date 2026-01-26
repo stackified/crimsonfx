@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Youtube, Twitter, Facebook } from "lucide-react";
+import { withBasePath } from "@/lib/base-path";
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
         {/* Top Header Section: Logo + Socials */}
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-foreground/10 pb-8 mb-12">
           <div className="flex items-center gap-3 mb-6 md:mb-0">
-            <img src="/logo.png" alt="Restro FX" className="h-10 w-auto" />
+            <img src={withBasePath("/logo.png")} alt="Restro FX" className="h-10 w-auto" />
             <span className="text-2xl font-bold tracking-tight text-foreground font-heading">Restro FX</span>
           </div>
 

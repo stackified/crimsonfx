@@ -79,6 +79,7 @@ jobs:
         env:
           NODE_ENV: production
           BASE_PATH: /RestroFX
+          NEXT_PUBLIC_BASE_PATH: /RestroFX
           ASSET_PREFIX: /RestroFX/
 
       - name: Upload artifact
