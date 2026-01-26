@@ -11,11 +11,9 @@ import {
     Target,
     Zap,
     Shield,
-    Clock,
     ArrowRight,
     Check,
-    Bot,
-    LineChart
+    Bot
 } from "lucide-react";
 
 export default function AITradingJournalPage() {
