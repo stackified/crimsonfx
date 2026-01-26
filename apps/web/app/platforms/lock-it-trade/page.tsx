@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer";
 import { BackgroundScroll } from "@/components/ui/background-scroll";
 import { Button } from "@crimsonfx/ui";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
     Lock,
     Zap,
