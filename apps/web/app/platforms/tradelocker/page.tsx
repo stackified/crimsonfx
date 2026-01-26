@@ -16,8 +16,6 @@ import {
     Smartphone,
     Download,
     Sparkles,
-    Rocket,
-    Target,
     Play,
     Star,
     Award
@@ -33,8 +31,6 @@ import { useMemo, lazy, Suspense } from "react";
 // Lazy load heavy components for better performance
 const Timeline = lazy(() => import("@/components/ui/timeline").then(mod => ({ default: mod.Timeline })));
 const CircularShowcase = lazy(() => import("@/components/ui/circular-showcase").then(mod => ({ default: mod.CircularShowcase })));
-const GlowCard = lazy(() => import("@/components/ui/glow-card").then(mod => ({ default: mod.GlowCard })));
-const BackgroundBeams = lazy(() => import("@/components/ui/background-beams").then(mod => ({ default: mod.BackgroundBeams })));
 
 // Loading fallback component
 const ComponentLoader = () => (
