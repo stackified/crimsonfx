@@ -12,7 +12,6 @@ import {
     Clock,
     Globe,
     Smartphone,
-    Check,
     ArrowRight,
     Layers,
     Activity
