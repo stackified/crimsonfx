@@ -493,29 +493,29 @@ export default function TradeLockerPage() {
                                         </div>
 
                                         <motion.div
-                                            animate={{ y: [0, -10, 0], x: [0, 5, 0], rotate: [0, 5, 0] }}
-                                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                            className="absolute -top-8 -right-12 z-30 drop-shadow-2xl filter brightness-110"
+                                            animate={{ y: [0, -15, 0], x: [0, 8, 0], rotate: [0, 8, 0] }}
+                                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                                            className="absolute top-12 -left-24 z-30 drop-shadow-2xl filter brightness-110"
                                         >
                                             <Image
                                                 src={withBasePath("/images/Trade Locker.png")}
                                                 alt="TL"
-                                                width={64}
-                                                height={64}
-                                                className="object-contain rounded-[1.25rem]"
+                                                width={56}
+                                                height={56}
+                                                className="object-contain rounded-[1.125rem]"
                                             />
                                         </motion.div>
                                         <motion.div
-                                            animate={{ y: [0, -15, 0], x: [0, -5, 0], rotate: [0, -5, 0] }}
-                                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                            className="absolute -bottom-10 -left-16 z-30 drop-shadow-2xl filter brightness-110"
+                                            animate={{ y: [0, -12, 0], x: [0, -6, 0], rotate: [0, -8, 0] }}
+                                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                            className="absolute bottom-12 -right-4 z-30 drop-shadow-2xl filter brightness-110"
                                         >
                                             <Image
                                                 src={withBasePath("/images/Trade Locker.png")}
                                                 alt="TL"
-                                                width={64}
-                                                height={64}
-                                                className="object-contain rounded-[1.25rem]"
+                                                width={48}
+                                                height={48}
+                                                className="object-contain rounded-[1rem]"
                                             />
                                         </motion.div>
                                     </motion.div>
