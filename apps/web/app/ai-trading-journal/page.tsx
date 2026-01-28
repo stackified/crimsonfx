@@ -15,6 +15,7 @@ import {
     Check,
     Bot
 } from "lucide-react";
+import { AetherFlow } from "@/components/ui/aether-flow";
 
 export default function AITradingJournalPage() {
     const features = [
@@ -89,16 +90,7 @@ export default function AITradingJournalPage() {
             <main className="min-h-screen">
                 {/* Hero Section - Animated Particles Background */}
                 <section className="relative overflow-hidden bg-gradient-to-b from-background to-primary/5 pt-32 pb-20">
-                    {/* Animated Grid Background */}
-                    <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-
-                    {/* Floating Elements */}
-                    <div className="absolute inset-0 overflow-hidden">
-                        <div className="absolute top-20 left-1/4 w-2 h-2 bg-primary rounded-full animate-ping" />
-                        <div className="absolute top-40 right-1/3 w-3 h-3 bg-primary/60 rounded-full animate-pulse" />
-                        <div className="absolute bottom-40 left-1/3 w-2 h-2 bg-primary/40 rounded-full animate-ping delay-500" />
-                        <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-primary/50 rounded-full animate-pulse delay-1000" />
-                    </div>
+                    <AetherFlow />
 
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                         <div className="max-w-4xl mx-auto text-center space-y-8">
