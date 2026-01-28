@@ -51,7 +51,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
+          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-10 sm:gap-8">
             <div>
               <h3 className="font-bold text-foreground mb-4">Platforms</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">

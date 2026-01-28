@@ -448,20 +448,20 @@ export default function TradeLockerPage() {
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.8 }}
-                                        className="space-y-8 text-white"
+                                        className="space-y-6 md:space-y-8 text-white text-center lg:text-left"
                                     >
-                                        <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold font-heading leading-none tracking-tight">
+                                        <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold font-heading leading-[1.1] tracking-tight">
                                             Test your strategy <br />
                                             <span className="text-white/80 italic font-light">risk-free.</span>
                                         </h2>
-                                        <p className="text-2xl text-white/90 font-light max-w-lg leading-relaxed">
+                                        <p className="text-lg sm:text-2xl text-white/90 font-light max-w-lg leading-relaxed mx-auto lg:mx-0">
                                             Get a $100,000 demo account and experience the TradeLocker advantage today. No credit card required.
                                         </p>
-                                        <div className="pt-4">
+                                        <div className="pt-2 md:pt-4">
                                             <Button
                                                 size="lg"
                                                 variant="secondary"
-                                                className="rounded-full px-12 h-16 text-lg font-bold bg-white text-primary hover:bg-neutral-100 shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(220,0,0,0.4)] transition-all duration-500 group relative overflow-hidden active:scale-95"
+                                                className="rounded-full px-8 sm:px-12 h-14 sm:h-16 text-base sm:text-lg font-bold bg-white text-primary hover:bg-neutral-100 shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(220,0,0,0.4)] transition-all duration-500 group relative overflow-hidden active:scale-95"
                                                 asChild
                                             >
                                                 <Link href="/demo">
@@ -479,9 +479,9 @@ export default function TradeLockerPage() {
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.8, delay: 0.2 }}
-                                        className="relative flex justify-center lg:justify-end"
+                                        className="relative flex justify-center lg:justify-end mt-12 lg:mt-0"
                                     >
-                                        <div className="relative w-80 h-[640px] bg-neutral-900/10 rounded-[4rem] border-8 border-white/20 shadow-2xl backdrop-blur-xl flex items-center justify-center overflow-hidden group-hover:scale-[1.02] transition-transform duration-700">
+                                        <div className="relative w-72 h-[560px] sm:w-80 sm:h-[640px] bg-neutral-900/10 rounded-[3rem] sm:rounded-[4rem] border-8 border-white/20 shadow-2xl backdrop-blur-xl flex items-center justify-center overflow-hidden group-hover:scale-[1.02] transition-transform duration-700">
                                             <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent z-20"></div>
                                             <Image
                                                 src={withBasePath("/TradeLockerSS.webp")}
@@ -489,33 +489,33 @@ export default function TradeLockerPage() {
                                                 fill
                                                 className="object-cover"
                                             />
-                                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-7 bg-black/40 rounded-b-3xl z-30"></div>
+                                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 sm:w-40 h-6 sm:h-7 bg-black/40 rounded-b-3xl z-30"></div>
                                         </div>
 
                                         <motion.div
                                             animate={{ y: [0, -15, 0], x: [0, 8, 0], rotate: [0, 8, 0] }}
                                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                            className="absolute top-20 -left-16 z-30 drop-shadow-2xl filter brightness-110"
-                                        >
-                                            <Image
-                                                src={withBasePath("/images/Trade Locker.png")}
-                                                alt="TL"
-                                                width={56}
-                                                height={56}
-                                                className="object-contain rounded-[1.125rem]"
-                                            />
-                                        </motion.div>
-                                        <motion.div
-                                            animate={{ y: [0, -12, 0], x: [0, -6, 0], rotate: [0, -8, 0] }}
-                                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                            className="absolute bottom-12 -right-4 z-30 drop-shadow-2xl filter brightness-110"
+                                            className="absolute top-28 -left-4 sm:top-20 sm:-left-16 z-30 drop-shadow-2xl filter brightness-110"
                                         >
                                             <Image
                                                 src={withBasePath("/images/Trade Locker.png")}
                                                 alt="TL"
                                                 width={48}
                                                 height={48}
-                                                className="object-contain rounded-[1rem]"
+                                                className="object-contain rounded-[1rem] sm:w-[56px] sm:h-[56px]"
+                                            />
+                                        </motion.div>
+                                        <motion.div
+                                            animate={{ y: [0, -12, 0], x: [0, -6, 0], rotate: [0, -8, 0] }}
+                                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                            className="absolute bottom-12 -right-2 sm:-right-4 z-30 drop-shadow-2xl filter brightness-110"
+                                        >
+                                            <Image
+                                                src={withBasePath("/images/Trade Locker.png")}
+                                                alt="TL"
+                                                width={40}
+                                                height={40}
+                                                className="object-contain rounded-[0.75rem] sm:w-[48px] sm:h-[48px]"
                                             />
                                         </motion.div>
                                     </motion.div>
