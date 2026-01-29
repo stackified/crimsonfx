@@ -15,8 +15,7 @@ import {
     Users,
     ArrowRight,
     Sparkles,
-    TrendingUp,
-    Shield
+    TrendingUp
 } from "lucide-react";
 import { AnimatedCard } from "@/components/ui/animated-card";
 import { BackgroundScroll } from "@/components/ui/background-scroll";
