@@ -79,7 +79,7 @@ export default function LockItTradePage() {
                 <Navbar />
 
                 {/* Hero Section */}
-                <section className="relative w-full z-20 pt-32 md:pt-20">
+                <section className="relative w-full z-20 pt-20 md:pt-20">
                     <ContainerScroll
                         titleComponent={
                             <>

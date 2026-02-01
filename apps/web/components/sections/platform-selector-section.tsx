@@ -13,7 +13,8 @@ import {
   ArrowRight,
   ArrowLeft,
   Monitor,
-  Laptop
+  Laptop,
+  Brain
 } from "lucide-react";
 
 interface Platform {
@@ -44,17 +45,17 @@ interface AccountTypeData {
 
 const platforms: Platform[] = [
   {
-    id: "mt5",
-    name: "MetaTrader 5",
-    icon: Monitor,
-    description: "Industry-standard platform with advanced charting and algorithmic trading",
+    id: "lock-it-trade",
+    name: "Lock It Trade",
+    icon: Brain,
+    description: "AI-powered trading journal designed for prop firm traders",
     features: [
-      "Advanced charting & analysis",
-      "EA & Algorithmic trading",
-      "Multi-asset trading",
-      "Mobile & Desktop apps",
+      "AI Readiness Score (87%)",
+      "Automated Performance Analysis",
+      "Violations & Risk Tracking",
+      "Strategy Compliance Monitoring",
     ],
-    badge: "Most Popular",
+    badge: "AI Powered",
     color: "from-red-950/20 via-black/30 to-red-900/20",
     borderColor: "border-red-500/20 hover:border-red-600/40",
   },

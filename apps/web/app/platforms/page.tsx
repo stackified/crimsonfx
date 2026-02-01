@@ -4,30 +4,27 @@ import { BackgroundScroll } from "@/components/ui/background-scroll";
 import { Card, CardContent, CardHeader, CardTitle } from "@crimsonfx/ui";
 import { Button } from "@crimsonfx/ui";
 import Link from "next/link";
-import { Check, Download, Smartphone, Globe } from "lucide-react";
+import { Check, Download, Smartphone, Globe, Brain } from "lucide-react";
 
 const platforms = [
   {
-    id: "mt5",
-    name: "MetaTrader 5",
+    id: "lock-it-trade",
+    name: "Lock It Trade",
     description:
-      "The industry-standard platform trusted by millions of traders worldwide. MetaTrader 5 offers advanced charting, technical analysis tools, and algorithmic trading capabilities.",
+      "A sophisticated AI-powered trading journal designed for serious traders to structure their success. Lock It Trade replaces legacy spreadsheets with data-driven insights and automated analytics.",
     features: [
-      "Advanced charting with 21 timeframes",
-      "80+ built-in technical indicators",
-      "EA & Algorithmic trading support",
-      "Multi-asset trading platform",
-      "Mobile apps for iOS and Android",
-      "Web-based platform available",
-      "One-click trading",
-      "Depth of Market (DOM)",
+      "87% AI Readiness Score",
+      "72% Average Win Rate Tracking",
+      "Violations Summary (Max Loss, Lot Size)",
+      "Risk/Reward Breakdown",
+      "85%+ Strategy Compliance Analysis",
+      "Institutional-grade Dashboard",
+      "Automated Trading Analytics",
+      "Prop Firm Challenge Optimization",
     ],
     downloads: [
-      { name: "Windows", icon: Download },
-      { name: "Mac", icon: Download },
-      { name: "iOS", icon: Smartphone },
-      { name: "Android", icon: Smartphone },
-      { name: "Web", icon: Globe },
+      { name: "Web App", icon: Globe },
+      { name: "Mobile", icon: Smartphone },
     ],
   },
   {
@@ -77,7 +74,14 @@ export default function PlatformsPage() {
                 <div key={platform.id}>
                   <Card>
                     <CardHeader>
-                      <CardTitle className="text-3xl">{platform.name}</CardTitle>
+                      <div className="flex items-center gap-3">
+                        {platform.id === "lock-it-trade" ? (
+                          <Brain className="h-8 w-8 text-primary" />
+                        ) : (
+                          <Smartphone className="h-8 w-8 text-primary" />
+                        )}
+                        <CardTitle className="text-3xl">{platform.name}</CardTitle>
+                      </div>
                       <p className="text-muted-foreground mt-4 text-lg">
                         {platform.description}
                       </p>
