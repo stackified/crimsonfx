@@ -192,8 +192,10 @@ export default function TradeLockerPage() {
                 <Navbar />
 
                 {/* Redesigned Hero Section with Container Scroll */}
-                {/* Redesigned Hero Section with Container Scroll */}
-                <section className="relative w-full z-20 pt-32 md:pt-20">
+                <section className="relative w-full z-20 pt-8">
+                    {/* Hero Glows */}
+                    <div className="hero-glow-1 animate-pulse-slow opacity-20" />
+                    <div className="hero-glow-2 animate-pulse-slow opacity-20" style={{ animationDelay: "2s" }} />
                     <ContainerScroll
                         titleComponent={
                             <>
@@ -307,10 +309,6 @@ export default function TradeLockerPage() {
                 <main className="relative bg-transparent">
                     {/* Enhanced Features Section */}
                     <section className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-                        {/* <div className="absolute inset-0 bg-neutral-50/80 backdrop-blur-sm"></div> Removed for seamless look */}
-                        <Suspense fallback={null}>
-                            {/* <BackgroundBeams className="opacity-30" /> Removed meteors/beams */}
-                        </Suspense>
                         <div className="container mx-auto max-w-7xl relative z-10">
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
@@ -332,12 +330,13 @@ export default function TradeLockerPage() {
                                     <AnimatedCard key={feature.id} index={index}>
                                         <div className="relative group h-[280px] rounded-2xl overflow-hidden border border-neutral-200 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl cursor-pointer">
                                             {/* Background Image */}
-                                            <div className="absolute inset-0">
+                                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                                                 <Image
                                                     src={withBasePath("/images/Trade Locker Swapped Colors.png")}
                                                     alt={feature.title}
-                                                    fill
-                                                    className="object-cover opacity-30 group-hover:opacity-35 transition-opacity duration-500"
+                                                    width={700}
+                                                    height={700}
+                                                    className="object-contain opacity-50 group-hover:opacity-70 transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-110"
                                                 />
                                             </div>
 
@@ -435,9 +434,9 @@ export default function TradeLockerPage() {
 
                     {/* Enhanced Demo CTA */}
                     <section className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-                        <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
+                        <div className="absolute inset-x-0 inset-y-0 bg-transparent"></div>
                         <div className="container mx-auto max-w-7xl relative z-10">
-                            <div className="relative rounded-[2rem] sm:rounded-[3rem] overflow-hidden bg-gradient-to-br from-primary via-red-600 to-red-700 p-6 sm:p-12 lg:p-24 shadow-2xl group">
+                            <div className="relative rounded-[2rem] sm:rounded-[3rem] overflow-hidden bg-gradient-to-br from-primary via-red-600 to-red-700 p-8 sm:p-12 lg:p-24 shadow-2xl group mx-auto max-w-[90%] sm:max-w-full">
                                 {/* Animated Background Pattern */}
                                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
 

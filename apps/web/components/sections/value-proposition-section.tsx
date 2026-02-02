@@ -38,7 +38,7 @@ export function ValuePropositionSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-heading text-foreground mb-4">
-            Why Traders Choose Restro FX
+            Why Traders Choose <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">Restro FX</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
             RESTRO FX is committed to transforming your trading experience by integrating expert financial guidance with advanced technology, ensuring that your investment goals are not only achieved but surpassed.

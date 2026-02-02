@@ -58,7 +58,8 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><Link href="/platforms/lock-it-trade" className="hover:text-primary">Lock It Trade</Link></li>
                 <li><Link href="/platforms/tradelocker" className="hover:text-primary">TradeLocker</Link></li>
-                <li><Link href="/ai-trading-journal" className="hover:text-primary">AI Trading Journal</Link></li>
+                <li>						<Link href="/platforms/ai-trading-journal" className="text-sm text-muted-foreground hover:text-primary transition-colors">AI Trading Journal</Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -92,11 +93,18 @@ export function Footer() {
 
         {/* Legal Strip */}
         <div className="flex flex-wrap justify-center lg:justify-end gap-x-8 gap-y-2 mb-12 border-b border-foreground/5 pb-8">
-          {["AML Policy", "Risk Disclosure", "Privacy Policy", "Refund Policy", "Terms & Conditions"].map((link) => (
-            <Link key={link} href="#" className="text-xs font-semibold text-muted-foreground hover:text-primary">
-              {link}
-            </Link>
-          ))}
+          <Link href="/legal/aml" className="text-xs font-semibold text-muted-foreground hover:text-primary">
+            AML Policy
+          </Link>
+          <Link href="/legal/risk-disclosure" className="text-xs font-semibold text-muted-foreground hover:text-primary">
+            Risk Disclosure
+          </Link>
+          <Link href="/legal/privacy" className="text-xs font-semibold text-muted-foreground hover:text-primary">
+            Privacy Policy
+          </Link>
+          <Link href="/legal/terms" className="text-xs font-semibold text-muted-foreground hover:text-primary">
+            Terms & Conditions
+          </Link>
           <Link href="/register" className="text-xs font-bold text-primary hover:underline">Opening an Account</Link>
         </div>
 

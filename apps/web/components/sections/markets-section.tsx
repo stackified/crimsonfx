@@ -99,7 +99,7 @@ export function MarketsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-heading text-foreground mb-4">
-            Trade Global Markets
+            Trade <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">Global Markets</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Access a wide range of trading instruments across multiple asset classes with professional-grade execution.

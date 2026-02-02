@@ -66,6 +66,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
     const text = typeof children === "string" ? children : children?.toString() || "";
     const [isAnimating, setIsAnimating] = useState(false);
 
+    // Разделение текста на символы с поддержкой Unicode и эмодзи
     const splitIntoCharacters = (text: string): string[] => {
       if (typeof Intl !== "undefined" && "Segmenter" in Intl) {
         const segmenter = new (Intl as any).Segmenter("en", { granularity: "grapheme" });
@@ -74,6 +75,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
       return Array.from(text);
     };
 
+    // Разделение текста на основе параметра splitBy
     const elements = useMemo(() => {
       const words = text.split(" ");
       if (splitBy === "characters") {
@@ -89,6 +91,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
           : text.split(splitBy);
     }, [text, splitBy]);
 
+    // Расчет задержек для эффекта stagger
     const getStaggerDelay = useCallback(
       (index: number) => {
         const total =
@@ -114,7 +117,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
         }
         return Math.abs(staggerFrom - index) * staggerDuration;
       },
-      [elements, staggerFrom, staggerDuration, splitBy]
+      [elements.length, staggerFrom, staggerDuration, splitBy]
     );
 
     const startAnimation = useCallback(() => {
@@ -131,7 +134,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
       if (autoStart) {
         startAnimation();
       }
-    }, [autoStart, startAnimation]);
+    }, [autoStart]);
 
     const variants = {
       hidden: { y: reverse ? "-100%" : "100%" },

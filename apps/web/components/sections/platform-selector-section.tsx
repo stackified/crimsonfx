@@ -163,7 +163,7 @@ export function PlatformSelectorSection() {
             <span>Get Started</span>
           </motion.div>
           <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-heading text-foreground mb-4">
-            Choose Your Platform
+            <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">Choose Your Platform</span>
             <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl mt-2"> & Account Type</span>
           </h2>
           <p className="text-muted-foreground text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">

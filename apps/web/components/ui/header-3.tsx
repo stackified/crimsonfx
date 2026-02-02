@@ -48,7 +48,7 @@ const platformLinks: LinkItem[] = [
 	},
 	{
 		title: 'AI Trading Journal',
-		href: '/ai-trading-journal',
+		href: '/platforms/ai-trading-journal',
 		description: 'Analyze your performance with AI',
 		icon: BarChart,
 	},
@@ -108,7 +108,7 @@ export function Header() {
 	return (
 		<header
 			className={cn(
-				'sticky z-50 mx-auto w-full max-w-5xl transition-all duration-300',
+				'sticky z-[100] mx-auto w-full max-w-5xl transition-all duration-300',
 				scrolled
 					? 'bg-background/80 border border-border backdrop-blur-lg md:top-4 md:max-w-4xl md:rounded-full md:shadow-lg top-0'
 					: 'bg-transparent border-transparent top-0'
@@ -195,7 +195,7 @@ export function Header() {
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<NavigationMenuLink asChild>
-									<Link href="/affiliate-program" className="hover:bg-accent rounded-md p-2 px-2 whitespace-nowrap text-sm font-medium">
+									<Link href="/partners/affiliate" className="hover:bg-accent rounded-md p-2 px-2 whitespace-nowrap text-sm font-medium">
 										Affiliate Program
 									</Link>
 								</NavigationMenuLink>
@@ -255,7 +255,7 @@ export function Header() {
 						</ul>
 					</div>
 
-					<Link href="/affiliate-program" className={cn(buttonVariants({ variant: 'ghost', className: 'justify-start w-full px-2 font-semibold' }))}>
+					<Link href="/partners/affiliate" className={cn(buttonVariants({ variant: 'ghost', className: 'justify-start w-full px-2 font-semibold' }))}>
 						Affiliate Program
 					</Link>
 				</div>

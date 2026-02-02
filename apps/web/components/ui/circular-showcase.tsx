@@ -76,7 +76,7 @@ export const CircularShowcase = ({
     const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
     // Minimum swipe distance (in px)
-    const minSwipeDistance = 50;
+    const minSwipeDistance = 30;
 
     const imageContainerRef = useRef<HTMLDivElement>(null);
     const autoplayIntervalRef = useRef<NodeJS.Timeout | null>(null);

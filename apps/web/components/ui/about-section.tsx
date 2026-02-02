@@ -1,0 +1,284 @@
+"use client";
+import { TimelineContent } from "@/components/ui/timeline-animation";
+import { ArrowRight, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { useRef } from "react";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+
+export default function AboutSection3() {
+    const heroRef = useRef<HTMLDivElement>(null);
+    const revealVariants = {
+        visible: (i: number) => ({
+            y: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+            transition: {
+                delay: i * 0.4,
+                duration: 0.5,
+            },
+        }),
+        hidden: {
+            filter: "blur(10px)",
+            y: -20,
+            opacity: 0,
+        },
+    };
+    const scaleVariants = {
+        visible: (i: number) => ({
+            opacity: 1,
+            filter: "blur(0px)",
+            transition: {
+                delay: i * 0.4,
+                duration: 0.5,
+            },
+        }),
+        hidden: {
+            filter: "blur(10px)",
+            opacity: 0,
+        },
+    };
+    return (
+        // Used bg-transparent to allow main page background to show through (seamless)
+        <section className="py-20 px-4 bg-transparent relative overflow-hidden" ref={heroRef}>
+
+            <div className="max-w-6xl mx-auto">
+                <div className="relative">
+                    {/* Header with social icons */}
+                    <div className="flex justify-between items-center mb-8 w-[85%] absolute lg:top-4 md:top-0 sm:-top-2 -top-3 z-10">
+                        <div className="flex items-center gap-2 text-xl">
+                            <span className="text-primary animate-spin">✱</span>
+                            <TimelineContent
+                                as="span"
+                                animationNum={0}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="text-sm font-medium text-muted-foreground tracking-widest uppercase"
+                            >
+                                WHO WE ARE
+                            </TimelineContent>
+                        </div>
+                        <div className="flex gap-4">
+                            <TimelineContent
+                                as="a"
+                                animationNum={0}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="md:w-8 md:h-8 sm:w-6 w-5 sm:h-6 h-5 border border-border bg-background rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-50 hover:border-blue-200 transition-colors group"
+                                aria-label="Facebook"
+                            >
+                                <Facebook className="w-4 h-4 text-muted-foreground group-hover:text-blue-600 transition-colors" />
+                            </TimelineContent>
+                            <TimelineContent
+                                as="a"
+                                animationNum={1}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="md:w-8 md:h-8 sm:w-6 w-5 sm:h-6 h-5 border border-border bg-background rounded-lg flex items-center justify-center cursor-pointer hover:bg-pink-50 hover:border-pink-200 transition-colors group"
+                                aria-label="Instagram"
+                            >
+                                <Instagram className="w-4 h-4 text-muted-foreground group-hover:text-pink-600 transition-colors" />
+                            </TimelineContent>
+                            <TimelineContent
+                                as="a"
+                                animationNum={2}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="md:w-8 md:h-8 sm:w-6 w-5 sm:h-6 h-5 border border-border bg-background rounded-lg flex items-center justify-center cursor-pointer hover:bg-blue-50 hover:border-blue-200 transition-colors group"
+                                aria-label="LinkedIn"
+                            >
+                                <Linkedin className="w-4 h-4 text-muted-foreground group-hover:text-blue-700 transition-colors" />
+                            </TimelineContent>
+                            <TimelineContent
+                                as="a"
+                                animationNum={3}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="md:w-8 md:h-8 sm:w-6 w-5 sm:h-6 h-5 border border-border bg-background rounded-lg flex items-center justify-center cursor-pointer hover:bg-red-50 hover:border-red-200 transition-colors group"
+                                aria-label="YouTube"
+                            >
+                                <Youtube className="w-4 h-4 text-muted-foreground group-hover:text-red-600 transition-colors" />
+                            </TimelineContent>
+                        </div>
+                    </div>
+
+                    <TimelineContent
+                        as="figure"
+                        animationNum={4}
+                        timelineRef={heroRef}
+                        customVariants={scaleVariants}
+                        className="relative group w-full aspect-[2.5/1]"
+                    >
+                        <svg
+                            className="w-full h-full"
+                            viewBox="0 0 100 40"
+                            preserveAspectRatio="xMidYMid slice"
+                        >
+                            <defs>
+                                <clipPath
+                                    id="clip-inverted"
+                                    clipPathUnits={"objectBoundingBox"}
+                                >
+                                    <path
+                                        d="M0.0998072 1H0.422076H0.749756C0.767072 1 0.774207 0.961783 0.77561 0.942675V0.807325C0.777053 0.743631 0.791844 0.731953 0.799059 0.734076H0.969813C0.996268 0.730255 1.00088 0.693206 0.999875 0.675159V0.0700637C0.999875 0.0254777 0.985045 0.00477707 0.977629 0H0.902473C0.854975 0 0.890448 0.138535 0.850165 0.138535H0.0204424C0.00408849 0.142357 0 0.180467 0 0.199045V0.410828C0 0.449045 0.0136283 0.46603 0.0204424 0.469745H0.0523086C0.0696245 0.471019 0.0735527 0.497877 0.0733523 0.511146V0.915605C0.0723903 0.983121 0.090588 1 0.0998072 1Z"
+                                        fill="#D9D9D9"
+                                    />
+                                </clipPath>
+                            </defs>
+                            <image
+                                clipPath="url(#clip-inverted)"
+                                preserveAspectRatio="xMidYMid slice"
+                                width={"100%"}
+                                height={"100%"}
+                                xlinkHref="/images/About1.jpg"
+                            ></image>
+                        </svg>
+                    </TimelineContent>
+
+                    {/* Stats: Adjusted top margin and relative placement */}
+                    <div className="flex flex-wrap lg:justify-start justify-between items-center py-3 text-sm mt-8 relative z-20">
+                        <TimelineContent
+                            as="div"
+                            animationNum={5}
+                            timelineRef={heroRef}
+                            customVariants={revealVariants}
+                            className="flex gap-4"
+                        >
+                            <div className="flex items-center gap-2 mb-2 sm:text-base text-xs">
+                                <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent font-bold">10+</span>
+                                <span className="text-muted-foreground">years experience</span>
+                                <span className="text-muted-foreground/30">|</span>
+                            </div>
+                            <div className="flex items-center gap-2 mb-2 sm:text-base text-xs">
+                                <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent font-bold">$10B+</span>
+                                <span className="text-muted-foreground">volume traded</span>
+                            </div>
+                        </TimelineContent>
+
+                        {/* Shifted down slightly */}
+                        <div className="lg:absolute lg:-right-4 lg:bottom-24 flex lg:flex-col flex-row-reverse lg:gap-0 gap-4">
+                            <TimelineContent
+                                as="div"
+                                animationNum={6}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="flex lg:text-4xl sm:text-3xl text-2xl items-center gap-2 mb-2"
+                            >
+                                <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent font-semibold">50k+</span>
+                                <span className="text-muted-foreground uppercase">Traders</span>
+                            </TimelineContent>
+                            <TimelineContent
+                                as="div"
+                                animationNum={7}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="flex items-center gap-2 mb-2 sm:text-base text-xs"
+                            >
+                                <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent font-bold">24/7</span>
+                                <span className="text-muted-foreground">global support</span>
+                                <span className="text-muted-foreground/30 lg:hidden block">|</span>
+                            </TimelineContent>
+                        </div>
+                    </div>
+                </div>
+                {/* Main Content */}
+                <div className="grid md:grid-cols-3 gap-8 mt-12">
+                    <div className="md:col-span-2">
+                        <h1 className="sm:text-4xl md:text-5xl text-2xl !leading-[110%] font-semibold mb-8 font-heading font-bold">
+                            <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">
+                                Empowering Your Trading Journey.
+                            </span>
+                        </h1>
+
+                        <TimelineContent
+                            as="div"
+                            animationNum={9}
+                            timelineRef={heroRef}
+                            customVariants={revealVariants}
+                            className="grid md:grid-cols-2 gap-8 text-muted-foreground"
+                        >
+                            <TimelineContent
+                                as="div"
+                                animationNum={10}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="sm:text-base text-xs"
+                            >
+                                <p className="leading-relaxed text-justify">
+                                    RestroFX was founded with a single mission: to providing traders with a superior technological environment. We believe that robust infrastructure, low latency, and deep liquidity are the cornerstones of successful trading.
+                                </p>
+                            </TimelineContent>
+                            <TimelineContent
+                                as="div"
+                                animationNum={11}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="sm:text-base text-xs"
+                            >
+                                <p className="leading-relaxed text-justify">
+                                    Our platform connects you directly to global financial markets, ensuring execution you can trust. Whether you are a beginner or a seasoned professional, RestroFX provides the tools you need to excel.
+                                </p>
+                            </TimelineContent>
+                        </TimelineContent>
+                    </div>
+
+                    <div className="md:col-span-1">
+                        <div className="text-right flex flex-col items-end">
+                            <TimelineContent
+                                as="div"
+                                animationNum={12}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="text-2xl font-bold mb-2 uppercase"
+                            >
+                                <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">RestroFX</span>
+                            </TimelineContent>
+                            <TimelineContent
+                                as="div"
+                                animationNum={13}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="text-muted-foreground text-sm mb-8"
+                            >
+                                Premium Trading Platform
+                            </TimelineContent>
+
+                            <TimelineContent
+                                as="div"
+                                animationNum={14}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className="mb-8"
+                            >
+                                <p className="text-foreground font-medium mb-4">
+                                    Ready to experience the next level of trading?
+                                </p>
+                            </TimelineContent>
+
+                            <TimelineContent
+                                as="button"
+                                animationNum={15}
+                                timelineRef={heroRef}
+                                customVariants={revealVariants}
+                                className={cn(buttonVariants({ size: "lg" }), "gap-2 group")}
+                            >
+                                START TRADING <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </TimelineContent>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

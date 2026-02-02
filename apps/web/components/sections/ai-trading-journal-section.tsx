@@ -124,7 +124,7 @@ export function AiTradingJournalSection() {
 
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight text-foreground leading-[1.1]">
                             Your Personal <br />
-                            <span className="text-primary">AI Trading Mentor</span>
+                            <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">AI Trading Mentor</span>
                         </h2>
 
                         <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
@@ -147,9 +147,9 @@ export function AiTradingJournalSection() {
                         </ul>
 
                         <div className="pt-4">
-                            <Button size="lg" className="rounded-xl px-8 h-12 text-base font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform" asChild>
-                                <Link href="/ai-trading-journal">
-                                    Start Your AI Journey <ArrowRight className="ml-2 h-4 w-4" />
+                            <Button size="lg" className="rounded-xl px-10 h-14 bg-white text-primary hover:bg-neutral-100 shadow-xl shadow-black/20" asChild>
+                                <Link href="/platforms/ai-trading-journal">
+                                    Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
                             </Button>
                         </div>

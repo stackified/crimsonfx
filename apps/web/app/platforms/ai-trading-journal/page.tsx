@@ -91,9 +91,13 @@ export default function AITradingJournalPage() {
         <>
             <BackgroundScroll />
             <Navbar />
-            <main className="min-h-screen">
+            <main className="min-h-screen bg-transparent">
                 {/* Hero Section - Animated Particles Background */}
-                <section className="relative overflow-hidden bg-gradient-to-b from-background to-primary/5 pt-32 pb-20">
+                <section className="relative overflow-hidden bg-transparent pt-8 md:pt-12 pb-20">
+                    {/* Hero Glows */}
+                    <div className="hero-glow-1 animate-pulse-slow opacity-20" />
+                    <div className="hero-glow-2 animate-pulse-slow opacity-20" style={{ animationDelay: "2s" }} />
+
                     <AetherFlow />
 
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -280,9 +284,9 @@ export default function AITradingJournalPage() {
 
                 {/* CTA Section */}
                 <section className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
+                    <div className="absolute inset-x-0 inset-y-0 bg-transparent"></div>
                     <div className="container mx-auto max-w-7xl relative z-10">
-                        <div className="relative rounded-[2rem] sm:rounded-[3rem] overflow-hidden bg-gradient-to-br from-primary via-red-600 to-red-700 p-6 sm:p-12 lg:p-24 shadow-2xl group text-center">
+                        <div className="relative rounded-[2rem] sm:rounded-[3rem] overflow-hidden bg-gradient-to-br from-primary via-red-600 to-red-700 p-8 sm:p-12 lg:p-24 shadow-2xl group text-center mx-auto max-w-[90%] sm:max-w-full">
                             {/* Animated Background Pattern */}
                             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-40 transition-opacity duration-500"></div>
 

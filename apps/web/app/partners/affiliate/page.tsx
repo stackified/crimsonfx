@@ -140,7 +140,7 @@ export default function AffiliateProgramPage() {
         },
         {
             step: "03",
-            title: "Promote Restro FX",
+            title: "Promote RestroFX",
             description: "Share your links through your website, social media, email lists, or paid advertising."
         },
         {
@@ -191,11 +191,11 @@ export default function AffiliateProgramPage() {
 
                             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-foreground leading-tight">
                                 Affiliate Program
-                                <span className="block text-primary mt-2">Earn with Every Referral</span>
+                                <span className="block bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent mt-2">Earn with Every Referral</span>
                             </h1>
 
                             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                                Join Restro FX&apos;s affiliate program and earn generous commissions by promoting our premium trading platforms.
+                                Join RestroFX&apos;s affiliate program and earn generous commissions by promoting our premium trading platforms.
                                 Choose your commission model and start earning today.
                             </p>
 
@@ -229,8 +229,8 @@ export default function AffiliateProgramPage() {
                 <section className="py-20 px-4 sm:px-6 lg:px-8">
                     <div className="container mx-auto max-w-7xl">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading text-foreground mb-4">
-                                Why Join Our Affiliate Program?
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading mb-4">
+                                Why Join Our <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">Affiliate Program?</span>
                             </h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                                 Partner with a trusted broker and unlock unlimited earning potential
@@ -258,8 +258,8 @@ export default function AffiliateProgramPage() {
                 <section id="commission-plans" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
                     <div className="container mx-auto max-w-7xl">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading text-foreground mb-4">
-                                Choose Your Commission Model
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading mb-4">
+                                Choose Your <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">Commission Model</span>
                             </h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                                 Select the commission structure that best fits your business model
@@ -323,11 +323,11 @@ export default function AffiliateProgramPage() {
                 <section className="py-20 px-4 sm:px-6 lg:px-8">
                     <div className="container mx-auto max-w-7xl">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading text-foreground mb-4">
-                                Professional Marketing Tools
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading mb-4">
+                                Professional <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent">Marketing Tools</span>
                             </h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                                Everything you need to promote Restro FX effectively
+                                Everything you need to promote RestroFX effectively
                             </p>
                         </div>
 
@@ -408,7 +408,7 @@ export default function AffiliateProgramPage() {
                                 Ready to Start Earning?
                             </h2>
                             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                                Join thousands of affiliates earning commissions by promoting Restro FX
+                                Join thousands of affiliates earning commissions by promoting RestroFX
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button size="lg" className="rounded-xl px-8 h-14 text-lg font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform" asChild>
