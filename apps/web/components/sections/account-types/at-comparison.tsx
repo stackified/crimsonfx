@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@crimsonfx/ui";
 import Link from "next/link";
-import { Check, Info } from "lucide-react";
+import { Info } from "lucide-react";
 import type { AccountType } from "@crimsonfx/types";
 
 const accountTypes: AccountType[] = [

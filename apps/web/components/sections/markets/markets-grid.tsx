@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@crimsonfx/ui";
 import Link from "next/link";
-import { TrendingUp, BarChart3, Droplets, Bitcoin, ArrowRight } from "lucide-react";
+import { TrendingUp, BarChart3, Droplets, Bitcoin } from "lucide-react";
 
 const markets = [
     {

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@crimsonfx/ui";
 import Link from "next/link";
-import { Check, ArrowRight, ShieldCheck, Zap, BarChart } from "lucide-react";
+import { ShieldCheck, Zap, BarChart } from "lucide-react";
 
 export function DemoContent() {
     return (
